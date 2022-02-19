@@ -1,0 +1,27 @@
+table {
+    width: 100%;
+}
+
+.mat-row .mat-cell {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  .mat-row:hover .mat-cell {
+    border-color: currentColor;
+  }
+
+  thead {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+
+  mat-paginator {
+    margin-bottom: 1rem;
+  }
+
+  mat-selection-list {
+    margin: 1rem 0;
+  }
