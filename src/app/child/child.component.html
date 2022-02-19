@@ -1,0 +1,10 @@
+<div>
+    /
+    <a mat-button routerLink="/parent">Parent</a>
+    /
+    <a mat-button color="accent" [routerLink]="['/parent', childName]">{{childName}}</a>
+</div>
+
+<mat-selection-list>
+    <mat-list-option>The state of this component is not cached.</mat-list-option>
+</mat-selection-list>
