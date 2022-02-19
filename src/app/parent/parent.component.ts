@@ -3,22 +3,25 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
 
+console.log("Outside parent...");
+
+const MOCK_DATA:string[] = [];
+for (let i = 1; i <= 100; i++) {
+  MOCK_DATA.push('Child ' + i);
+}
+
 @Component({
   selector: 'app-parent',
   templateUrl: './parent.component.html',
   styleUrls: ['./parent.component.scss']
 })
-export class ParentComponent implements AfterViewInit {
-  children: string[] = [];   
+export class ParentComponent implements AfterViewInit {   
   dataSource: MatTableDataSource<string>;
 
   @ViewChild(MatPaginator) paginator: MatPaginator | undefined;
 
   constructor(private router: Router) {
-    for (let i = 1; i <= 100; i++) {
-      this.children.push('Child ' + i);
-    }
-    this.dataSource = new MatTableDataSource<string>(this.children);
+    this.dataSource = new MatTableDataSource<string>(MOCK_DATA);
   }
 
   ngAfterViewInit() {

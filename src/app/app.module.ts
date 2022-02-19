@@ -6,6 +6,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,6 +34,7 @@ import { CacheRouteReuseStrategy } from './route-reuse-strategy';
     MatPaginatorModule,
     MatTableModule,
     MatToolbarModule,
+    MatIconModule,
   ],
   providers: [{
     provide: RouteReuseStrategy,

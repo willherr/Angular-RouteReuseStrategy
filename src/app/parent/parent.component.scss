@@ -12,12 +12,6 @@ table {
     border-color: currentColor;
   }
 
-  thead {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-  }
-
   mat-paginator {
     margin-bottom: 1rem;
   }
