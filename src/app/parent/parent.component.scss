@@ -11,3 +11,9 @@ table {
   .mat-row:hover .mat-cell {
     border-color: currentColor;
   }
+
+  thead {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
