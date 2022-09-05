@@ -57,7 +57,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "https://willherr.github.io/Angular-RouteReuseStrategy/",
+              "baseHref": "https://will-i-am.dev/Angular-RouteReuseStrategy/",
               "vendorChunk": true
             },
             "development": {
